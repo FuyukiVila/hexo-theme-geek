@@ -555,6 +555,20 @@ label.el-radio, label.el-checkbox {
     }
 }
 
+#pio-container {
+    bottom: -0.3rem;
+    z-index: 1;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-0.3rem);
+    }
+}
+
+#pio {
+    height: 15rem;
+}
+
 @media screen and (max-width: 800px) {
     .hd {
         width: 95%;
