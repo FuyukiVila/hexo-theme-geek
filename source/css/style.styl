@@ -559,9 +559,14 @@ label.el-radio, label.el-checkbox {
     bottom: -0.3rem;
     z-index: 1;
     transition: transform 0.3s;
+    cursor: grab;
 
     &:hover {
         transform: translateY(-0.3rem);
+    }
+
+    &:active {
+        cursor: grabbing;
     }
 }
 
