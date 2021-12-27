@@ -72,7 +72,7 @@ module.exports = function (args, contents) {
 
         let getLyric = id => {
           return new Promise((resolve, reject) => {
-            fetch("https://api.imjad.cn/cloudmusic/?type=lyric&id=" + id).then(res => {
+            fetch("https://hibiapi.getloli.com/api/netease/?type=lyric&id=" + id).then(res => {
               return res.json()
             }).then(data => {
               // console.log(data)
@@ -91,22 +91,33 @@ module.exports = function (args, contents) {
           })
         }
 
+        let getSrc = id => {
+          return new Promise((resolve, reject) => {
+            fetch("https://hibiapi.getloli.com/api/netease/?type=song&id=" + id).then(res => {
+              return res.json()
+            }).then(data => {
+              resolve(data.data[0].url);
+            })
+          })
+        }
+
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
           if (typeof window.cplayerList[${JSON.stringify(targetID)}] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
+            let src = await getSrc(id);
             // console.log(lyric)
 
-            return fetch("https://api.imjad.cn/cloudmusic/?type=detail&id=" + id).then(function(res){return res.json()}).then(function(data){
+            return fetch("https://hibiapi.getloli.com/api/netease/?type=detail&id=" + id).then(function(res){return res.json()}).then(function(data){
               let obj = {
                 name: data.songs[0].name,
                 artist: data.songs[0].ar.map(function(ar){ return ar.name }).join(','),
                 poster: data.songs[0].al.picUrl,
                 lyric: lyric.lyric,
                 sublyric: lyric.tlyric,
-                src: 'https://api.imjad.cn/cloudmusic/?type=song&raw=true&id=' + id
+                src: src
               }
               this.add(obj);
               return obj;
