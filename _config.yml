@@ -23,5 +23,5 @@ highlight:
   enable: false
 
 cdn:
-  enabled: false
-  url: https://cdn.jsdelivr.net/gh/fuyukivila/fuyukivila.github.io
+  enabled: true
+  url: https://cdn.jsdelivr.net/gh/fuyukivila/fuyukivila.github.io@master
