@@ -22,5 +22,5 @@ highlight:
   enable: true
 
 cdn:
-  enabled: false
-  url: https://cdn.jsdelivr.net/gh/fuyukivila/hexo-theme-geek@master/source
+  enabled: true
+  url: https://cdn.jsdelivr.net/gh/fuyukivila/fuyukivila.xyz
