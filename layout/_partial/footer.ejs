@@ -1,13 +1,13 @@
 <div class="footer"
      id="footer">
     <p>
-        Copyright © 2020 <a class="flink"
-           href="https://nocilol.me">恶魔萝莉控</a> · Theme by <a class="flink"
-           href="https://github.com/journey-ad/hexo-theme-geek">Geek</a>.
+        <span class="my-face">Copyright © 2024 <a class="flink"
+           href="/">イルミネーション</a> · Theme by <a class="flink"
+           href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.</span>
         <br>
         Made with <i class="fa fa-heart throb"
            style="color:#d43f57"></i> by <span class="author"
-              itemprop="copyrightHolder">journey.ad</span>.
+              itemprop="copyrightHolder"><a href="https://github.com/fuyukivila">Fuyuki_Vila</a></span>.
         <label class="el-switch el-switch-green el-switch-sm"
                style="vertical-align: sub;">
             <input type="checkbox"
@@ -81,25 +81,10 @@
 <!-- Load TweenLite -->
 <script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/TweenLite.js"></script>
 
-<!-- Copyrighted cubism SDK -->
-<script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
 <!-- Load Pixi (dependency for cubism 2/4 integrated loader) -->
 <script src="https://cdn.jsdelivr.net/npm/pixi.js@5.3.6/dist/pixi.min.js"></script>
-<!-- Load cubism 4 integrated loader -->
-<script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.3.1/dist/cubism4.min.js"></script>
 
-<!-- Load pio and alternative loader -->
-<link href="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio.css" rel="stylesheet" type="text/css"/>
-<script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio_sdk4.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/load.js"></script>
+<!-- Load live2d -->
+<script src="https://fastly.jsdelivr.net/gh/fuyukivila/live2d_demo@master/assets/autoload.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.analytics.googleId %>"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '<%= theme.analytics.googleId %>');
-</script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/css/myface.css" />
