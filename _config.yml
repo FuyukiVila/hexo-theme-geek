@@ -1,0 +1,27 @@
+logo_title: イルミネーション
+
+style: white
+
+favicon: /favicon.png
+
+menu:
+  首页: /
+  归档: /archives
+  # 友链: /links
+  # 关于: /about
+  Github: https://github.com/fuyukivila
+  Bilibili: https://space.bilibili.com/23772649
+
+# 做了域名限制，请改成自己的 KEY
+# 若关闭valine 设置enable为false
+valine:
+  enable: false
+  appId:
+  appKey: 
+
+highlight:
+  enable: false
+
+cdn:
+  enabled: false
+  url: https://cdn.jsdelivr.net/gh/fuyukivila/fuyukivila.github.io
