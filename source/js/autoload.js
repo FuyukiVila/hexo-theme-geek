@@ -74,13 +74,13 @@ waifu_tips = {
         { "selector": ".fui-info-circle", "text": ["这里有关于我的信息呢"] },
         { "selector": ".fui-cross", "text": ["你不喜欢我了吗..."] },
 
-        { "selector": "a[href='/archives']", "text": ["这里都有些什么呢？"] },
-        { "selector": "a[href='https://github.com/fuyukivila']", "text": ["要逛逛我的GitHub吗？"] },
-        { "selector": "a[href='https://space.bilibili.com/23772649']", "text": ["要逛逛我的B站主页吗？"] },
-        { "selector": "a[href='/']", "text": ["要回到首页吗？"] },
+        { "selector": "a.ba[href='/archives']", "text": ["这里都有些什么呢？"] },
+        { "selector": "a.ba[href='https://github.com/fuyukivila']", "text": ["要逛逛我的GitHub吗？"] },
+        { "selector": "a.ba[href='https://space.bilibili.com/23772649']", "text": ["要逛逛我的B站主页吗？"] },
+        { "selector": "a.ba[href='/']", "text": ["要回到首页吗？"] },
 
-        { "selector": "#update_style[checked='checked']", "text": ["要变亮了，注意了哦~"] },
-        { "selector": "#update_style", "text": ["深夜时要爱护眼睛呀"] },
+        // { "selector": "#update_style:checked", "text": ["要变亮了，注意了哦~"] },
+        { "selector": ".el-switch-style", "text": ["深夜时要爱护眼睛呀"] },
         { "selector": ".back-to-top", "text": ["biu！直达顶部"] },
         { "selector": ".my-face", "text": ["网站的版权信息，还会动呢"] },
         { "selector": ".author", "text": ["这是网站的作者 <span style=\"color:#0099cc;\">{text}</span> 哦~"] },
@@ -106,11 +106,13 @@ waifu_tips = {
         { "date": "03/12", "text": ["今天是<span style=\"color:#0099cc;\">植树节</span>，要保护环境呀"] },
         { "date": "04/01", "text": ["悄悄告诉你一个秘密~<span style=\"background-color:#34495e;\">今天是愚人节，不要被骗了哦~</span>"] },
         { "date": "05/01", "text": ["今天是<span style=\"color:#0099cc;\">五一劳动节</span>，计划好假期去哪里了吗~"] },
-        { "date": "06/01", "text": ["<span style=\"color:#0099cc;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"] },
-        { "date": "09/03", "text": ["<span style=\"color:#0099cc;\">中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"] },
-        { "date": "09/10", "text": ["<span style=\"color:#0099cc;\">教师节</span>，在学校要给老师问声好呀~"] },
-        { "date": "10/01", "text": ["<span style=\"color:#0099cc;\">国庆节</span>，新中国已经成立69年了呢"] },
-        { "date": "11/05-11/12", "text": ["今年的<span style=\"color:#0099cc;\">双十一</span>是和谁一起过的呢~"] },
-        { "date": "12/20-12/31", "text": ["这几天是<span style=\"color:#0099cc;\">圣诞节</span>，主人肯定又去剁手买买买了~"] }
+        { "date": "06/01", "text": ["今天是<span style=\"color:#0099cc;\">儿童节</span>了呢，快活的时光总是短暂，要是永远长不大该多好啊…"] },
+        { "date": "09/03", "text": ["今天是<span style=\"color:#0099cc;\">中国人民抗日战争胜利纪念日</span>，铭记历史、缅怀先烈、珍爱和平、开创未来。"] },
+        { "date": "09/10", "text": ["今天是<span style=\"color:#0099cc;\">教师节</span>，在学校要给老师问声好呀~"] },
+        { "date": "10/01", "text": ["今天是<span style=\"color:#0099cc;\">国庆节</span>，假期打算怎么过啊？"] },
+        { "date": "10/24", "text": ["今天是<span style=\"color:#0099cc;\">程序员节</span>，写了多少行代码啊？"]},
+        { "date": "10/31", "text": ["<span style=\"color:#0099cc;\">万圣节</span>快乐！不给糖就捣蛋！"]},
+        { "date": "11/05-11/12", "text": ["这几天是<span style=\"color:#0099cc;\">双十一</span>主人肯定又去剁手买买买了~"] },
+        { "date": "12/20-12/31", "text": ["今年的<span style=\"color:#0099cc;\">圣诞节</span>，是和谁一起过的呢~"] }
     ]
 }
