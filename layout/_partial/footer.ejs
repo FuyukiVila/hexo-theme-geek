@@ -88,3 +88,75 @@
 <script src="/js/autoload.js"></script>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/huangwb8/bloghelper@latest/css/myface.css" />
+
+<link rel="stylesheet" type="text/css" href="/css/heimu.css">
+
+<!--鼠标样式-->
+<style type="text/css">
+    #cursor {
+        position: fixed;
+        width: 16px;
+        height: 16px;
+        background: #009688;
+        border-radius: 8px;
+        opacity: 0.25;
+        z-index: 10086;
+        pointer-events: none;
+        transition: 0.2s ease-in-out;
+        transition-property: background, opacity, transform
+    }
+
+    #cursor.hidden {
+        opacity: 0
+    }
+
+    #cursor.hover {
+        opacity: 0.1;
+        transform: scale(2.5)
+    }
+
+    #cursor.active {
+        opacity: 0.5;
+        transform: scale(0.5)
+    }
+
+    #clickME {
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid #009688
+    }
+</style>
+<script src="https://fastly.jsdelivr.net/gh/huangwb8/bloghelper/mouse/halo-dream/fairyDustCursor.min.js"></script>
+<!--鼠标样式结束-->
+
+<!--鼠标特效开始-->
+<script type="text/javascript">
+    var a_idx = 0;
+    jQuery(document).ready(function ($) {
+        $("body").click(function (e) {
+            var a = new Array("Ciallo～(∠·ω< )⌒★");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 9999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": '#' + Math.floor(Math.random() * 0xffffff).toString(16)
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+                1500,
+                function () {
+                    $i.remove();
+                });
+        });
+    });
+</script>
+<!--鼠标特效结束-->
