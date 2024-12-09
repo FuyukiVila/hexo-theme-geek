@@ -55,7 +55,7 @@
 
   var win = '\
   body, .post-content {\
-    font-family: serif\
+    font-family: Zpix, serif\
   }\
   '
   if(/windows|win32/i.test(navigator.userAgent)){
