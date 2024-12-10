@@ -74,10 +74,11 @@ waifu_tips = {
         { "selector": ".fui-info-circle", "text": ["这里有关于我的信息呢"] },
         { "selector": ".fui-cross", "text": ["你不喜欢我了吗..."] },
 
+        { "selector": "a.ba[href='/']", "text": ["要回到首页吗？"] },
         { "selector": "a.ba[href='/archives']", "text": ["这里都有些什么呢？"] },
+        { "selector": "a.ba[href='/about']", "text": ["想知道有关本站的信息吗？"] },
         { "selector": "a.ba[href='https://github.com/fuyukivila']", "text": ["要逛逛我的GitHub吗？"] },
         { "selector": "a.ba[href='https://space.bilibili.com/23772649']", "text": ["要逛逛我的B站主页吗？"] },
-        { "selector": "a.ba[href='/']", "text": ["要回到首页吗？"] },
 
         // { "selector": "#update_style:checked", "text": ["要变亮了，注意了哦~"] },
         { "selector": ".el-switch-style", "text": ["深夜时要爱护眼睛呀"] },
