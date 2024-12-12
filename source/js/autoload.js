@@ -80,8 +80,13 @@ waifu_tips = {
         { "selector": "a.ba[href='https://github.com/fuyukivila']", "text": ["要逛逛我的GitHub吗？"] },
         { "selector": "a.ba[href='https://space.bilibili.com/23772649']", "text": ["要逛逛我的B站主页吗？"] },
 
-        // { "selector": "#update_style:checked", "text": ["要变亮了，注意了哦~"] },
-        { "selector": ".el-switch", "text": ["深夜时要爱护眼睛呀"] },
+        { "selector": ".vedit", "text": ["要吐槽些什么呢？"] },
+        { "selector": ".vnick", "text": ["该怎么称呼你呢？"] },
+        { "selector": ".vmail", "text": ["留下你的邮箱，不然就是无头像人士了"] },
+        { "selector": ".vlink", "text": ["你的家在哪里呢，好让我去参观参观"] },
+
+        { "selector": "#bodyx.bg_black .el-switch", "text": ["要变亮了，注意了哦~"] },
+        { "selector": "#bodyx:not(.bg_black) .el-switch", "text": ["深夜时要爱护眼睛呀"] },
         { "selector": ".back-to-top", "text": ["biu！直达顶部"] },
         { "selector": ".my-face", "text": ["网站的版权信息，还会动呢"] },
         { "selector": ".author", "text": ["这是网站的作者 <span style=\"color:#0099cc;\">{text}</span> 哦~"] },

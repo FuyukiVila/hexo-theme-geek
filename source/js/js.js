@@ -148,9 +148,9 @@ function updateStyle() {
     $("#bodyx").removeClass("bg_black");
     $("#update_style").attr('checked', false);
   } else {
-    $("#footer").attr("style", "");
-    $(".flink").attr("style", "");
-    $(".ba").attr("style", "");
+    $("#footer").attr("style", "color: #d2d2d2;");
+    $(".flink").attr("style", "color: #d2d2d2;");
+    $(".ba").attr("style", "color: #d2d2d2;");
     $("#bodyx").addClass("bg_black");
     $("#update_style").attr('checked', true);
   }
