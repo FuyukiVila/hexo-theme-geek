@@ -15,6 +15,15 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
     <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
     <title><%= page.title ? `${page.title} - ${config.title}` : config.title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/katex.min.css"
+      integrity="sha384-Htz9HMhiwV8GuQ28Xr9pEs1B4qJiYu/nYLLwlDklR53QibDfmQzi7rYxXhMH/5/u" crossorigin="anonymous">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/katex.min.js"
+      integrity="sha384-bxmi2jLGCvnsEqMuYLKE/KsVCxV3PqmKeK6Y6+lmNXBry6+luFkEOsmp5vD9I/7+" crossorigin="anonymous"></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/contrib/auto-render.min.js"
+      integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
     <% if (theme.cdn.enabled && env.cmd === "generate") { %>
       <link rel="stylesheet" href="<%= theme.cdn.url %>/css/style.css">
       <link rel="stylesheet" href="<%= theme.cdn.url %>/libs/highlight/styles/monokai-sublime.css">
