@@ -15,9 +15,9 @@ menu:
 # 做了域名限制，请改成自己的 KEY
 # 若关闭valine 设置enable为false
 valine:
-  enable: false
-  appId: ''
-  appKey: ''
+  enable: true
+  appId: 'djfScDxiiCBA2REu1O3HXUBf-gzGzoHsz'
+  appKey: 'wKSYEsd2Gi4ZqMsnW43X228b'
 
 highlight:
   enable: false
