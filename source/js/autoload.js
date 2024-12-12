@@ -81,7 +81,7 @@ waifu_tips = {
         { "selector": "a.ba[href='https://space.bilibili.com/23772649']", "text": ["要逛逛我的B站主页吗？"] },
 
         // { "selector": "#update_style:checked", "text": ["要变亮了，注意了哦~"] },
-        { "selector": ".el-switch-style", "text": ["深夜时要爱护眼睛呀"] },
+        { "selector": ".el-switch", "text": ["深夜时要爱护眼睛呀"] },
         { "selector": ".back-to-top", "text": ["biu！直达顶部"] },
         { "selector": ".my-face", "text": ["网站的版权信息，还会动呢"] },
         { "selector": ".author", "text": ["这是网站的作者 <span style=\"color:#0099cc;\">{text}</span> 哦~"] },
